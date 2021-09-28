@@ -8,7 +8,7 @@ import { PrivateRoute } from '../_components';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 
 class App extends React.Component {
@@ -16,7 +16,6 @@ class App extends React.Component {
         super(props);
 
         history.listen((location, action) => {
-            // clear alert on location change
             this.props.clearAlerts();
         });
     }
